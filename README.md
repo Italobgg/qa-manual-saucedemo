@@ -1,39 +1,21 @@
-# Test Plan — SauceDemo
+# SauceDemo QA — Manual + Automation (Playwright)
 
-## Objetivo
-Validar fluxos principais do e-commerce: login, produtos, carrinho e checkout.
+Projeto de QA para o site **SauceDemo** com:
+- **Testes manuais** (plano, casos e template de bug)
+- **Automação E2E** com **Playwright + TypeScript** (POM)
+- **CI** no GitHub Actions
 
-## Escopo (In-scope)
-- Login (positivo e negativo)
-- Produtos (visualização e ordenação)
-- Carrinho (adicionar/remover e persistência)
-- Checkout (happy path e validações de campos obrigatórios)
+## Documentação
+- Test Plan: `docs/test-plan.md`
+- Test Cases: `docs/test-cases.md`
+- Bug Report Template: `docs/bug-report-template.md`
 
-## Fora de escopo (Out-of-scope)
-- Performance e testes de carga
-- Segurança (pentest)
-- Compatibilidade mobile e navegadores antigos
-- Integrações externas reais (pagamento/frete)
+## Stack
+- Playwright (@playwright/test)
+- TypeScript
+- GitHub Actions
 
-## Abordagem de teste
-- Testes funcionais (caixa preta): positivos e negativos
-- Técnicas: equivalência, valor limite, tabela de decisão (quando aplicável)
-- Exploratório: 2 sessões com charters
-- Regressão: rerun do smoke ao final
-
-## Ambiente
-- URL: https://www.saucedemo.com/
-- Navegadores: Chrome (principal), Firefox (secundário)
-
-## Critérios de entrada
-- Site acessível
-- Credenciais de teste disponíveis
-
-## Critérios de saída
-- Casos do escopo executados
-- Evidências registradas para falhas
-- Bugs/melhorias documentados (se houver)
-
-## Riscos
-- Instabilidade do site demo / resets
-- Mudanças sem aviso na aplicação de treino
+## Como rodar localmente
+### Instalar dependências
+```bash
+npm ci

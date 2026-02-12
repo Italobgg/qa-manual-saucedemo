@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Italobgg/qa-manual-saucedemo#readme",
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3"
   }
 }
